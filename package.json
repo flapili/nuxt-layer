@@ -1,0 +1,51 @@
+{
+  "name": "@flapili/nuxt-layer",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flapili/nuxt-layer.git"
+  },
+  "exports": {
+    ".": "./nuxt.config.ts",
+    "./uno.config": "./uno.config.ts",
+    "./eslint.config": "./eslint.config.js",
+    "./server": "./server/index.ts"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^11.2.0",
+    "@unocss/core": "^65.4.0",
+    "@unocss/nuxt": "^65.4.0",
+    "consola": "^3.3.3",
+    "firebase-admin": "^13.0.2",
+    "firebase-functions": "^6.2.0",
+    "firebase-functions-test": "^3.4.0",
+    "firebase-tools": "^13.29.1",
+    "radix-vue": "^1.9.12",
+    "unocss": "^65.4.0",
+    "unocss-preset-scrollbar": "^0.3.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.13.0",
+    "@unocss/eslint-plugin": "^65.4.0",
+    "eslint": "^9.18.0",
+    "nuxt": "^3.15.1",
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
+  }
+}
